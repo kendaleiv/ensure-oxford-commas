@@ -4,7 +4,7 @@
 [![travis-status](https://img.shields.io/travis/kendaleiv/ensure-oxford-commas.svg)](https://travis-ci.org/kendaleiv/ensure-oxford-commas)
 [![coveralls](https://img.shields.io/coveralls/kendaleiv/ensure-oxford-commas.svg)](https://coveralls.io/github/kendaleiv/ensure-oxford-commas)
 
-Ensure or discover if Oxford commas are being used for English language text.
+Ensure or discover if Oxford commas are being used in English language text.
 
 ## Install
 

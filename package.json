@@ -1,7 +1,7 @@
 {
   "name": "ensure-oxford-commas",
   "version": "0.0.0",
-  "description": "Ensure or discover if Oxford commas are being used for English language text.",
+  "description": "Ensure or discover if Oxford commas are being used in English language text.",
   "main": "lib/index.js",
   "files": [
     "lib/"
