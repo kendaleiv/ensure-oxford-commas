@@ -1,0 +1,49 @@
+{
+  "name": "ensure-oxford-commas",
+  "version": "0.0.0",
+  "description": "Ensure or discover if Oxford commas are being used for English language text.",
+  "main": "lib/index.js",
+  "files": [
+    "lib/"
+  ],
+  "keywords": [
+    "oxford",
+    "serial",
+    "comma",
+    "English",
+    "grammar"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kendaleiv/ensure-oxford-commas"
+  },
+  "scripts": {
+    "audit": "nsp check package",
+    "build": "babel -d ./ ./src",
+    "check": "npm run audit && npm outdated --depth 0",
+    "coverage": "nyc --reporter=lcov --reporter=text --reporter=html npm test",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "lint": "eslint src test",
+    "test": "ava",
+    "test:watch": "chokidar 'test/*.js' 'src/**' -c 'npm test' --silent --initial",
+    "validate": "npm run lint && npm test",
+    "prepare": "npm run build && npm run validate && npm run check"
+  },
+  "author": {
+    "name": "Ken Dale",
+    "email": "ken@kendaleiv.com",
+    "url": "http://kendaleiv.com"
+  },
+  "devDependencies": {
+    "ava": "^0.11.0",
+    "babel": "^5.8.33",
+    "babel-core": "^5.8.33",
+    "babel-eslint": "^4.1.5",
+    "chokidar-cli": "^1.2.0",
+    "coveralls": "^2.11.6",
+    "eslint": "^1.10.3",
+    "nsp": "^2.2.0",
+    "nyc": "^5.5.0"
+  }
+}
