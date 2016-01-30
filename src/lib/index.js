@@ -1,5 +1,6 @@
 export function isMissingOxfordCommas(str) {
-  // Regex: http://stackoverflow.com/a/30006707/941536
+  // Regular expression from:
+  // http://stackoverflow.com/a/30006707/941536
   return !!str.match(/\w+(?:,\s*\w+)*\s+(?:and|or)\s+\w+/gi);
 }
 
