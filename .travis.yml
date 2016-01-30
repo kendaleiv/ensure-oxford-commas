@@ -1,13 +1,21 @@
 language: node_js
 node_js:
-  - "0.12"
-  - "4"
-  - "5"
+- '0.12'
+- '4'
+- '5'
 install:
-  - npm install
+- npm install
 script:
-  - npm run check
-  - npm run build
-  - npm run validate
+- npm run check
+- npm run build
+- npm run validate
 after_success:
-  - npm run coveralls
+- npm run coveralls
+deploy:
+  provider: npm
+  email: ken@kendaleiv.com
+  api_key:
+    secure: qhi3XPTaNGJKsAkn9UOC9U/y+m7ce4tM27FQ6TJHvGmsQxPV13FXPJ0ywQKiW6zMX13Subya8MdMRmTFzM47s+m6rNFgeuwiWCVkYISRprJrjteLHERIY6vgzqCVgqt9FD/0dIyxSA2fBIDY1zMouYwh2MeCoKfwSehRavBTHOYY7s89MSH/VUqfvm7T0oz56/ihYuZ+zDkVYN0T/xgFgASp9nF/P4OkFZjnSux/PBYckW8hY9Hi2z2dhi8OaPRxZw5iv813Kmy7cukp1OFYVJ9l3sj39w7Behsxt0ilOS2IGilwHgDXcCYWH0t5mOq4QcEEFMk+2pOzTDtEw6WXTEYXDYHeu+Sx+319tnWOr0glWpu8W7aEJEJHkbF+z3MAUeiQbOWJ7NaGDavTl1vOV174zXh1RcHg456J5KOtFrXUbvJJXlMDHTKAZZMw4ekWYEvb+nYL0sgNGoAYLxhMklOUc5sucF/uWPlk4oEPtdPW92JGxo6lJR3xrxfsVYVXL3uLHIiGUzxA7QJPHv3hn2I+TcCiReecAa/JbOgviBEQH99bh2Z7CE0a2EVMmQ90xChnLqoMaXBKDv+FMAy2pHPrQsEL+G47IxmYX1Y1RdC92VcuRo5o6prDxT4Q9xkWdFlZLmieFTwQQZJ+gg/FYnVGlXgwYM1Q2jo3QXcS7tM=
+  on:
+    tags: true
+    repo: kendaleiv/ensure-oxford-commas
