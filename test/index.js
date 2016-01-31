@@ -7,7 +7,7 @@ import { ensureOxfordCommas, isMissingOxfordCommas } from '../src/lib/';
 // Test data
 //
 
-const noSentence = 'This is a sentence.';
+const noCommaSentence = 'This is a sentence.';
 const singleCommaSentence = 'This is, a test.';
 
 const oxfordCommaSimpleSentenceAnd = 'Please choose between red, green, and blue.';
@@ -15,7 +15,7 @@ const noOxfordCommaSimpleSentenceAnd = 'Please choose between red, green and blu
 
 const noOxfordCommaSimpleSentenceOr = 'Please choose one of red, green or blue.';
 
-const noOxfordCommaParagraph = `${noSentence} ${noOxfordCommaSimpleSentenceAnd} ${noSentence} ${noOxfordCommaSimpleSentenceOr} ${noSentence}`;
+const noOxfordCommaParagraph = `${noCommaSentence} ${noOxfordCommaSimpleSentenceAnd} ${noCommaSentence} ${noOxfordCommaSimpleSentenceOr} ${noCommaSentence}`;
 
 //
 // ensureOxfordCommas
