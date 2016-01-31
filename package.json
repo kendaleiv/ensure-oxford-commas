@@ -22,6 +22,8 @@
     "audit": "nsp check package",
     "build": "babel -d ./ ./src",
     "check": "npm run audit && npm outdated --depth 0",
+    "coverage": "nyc --reporter=lcov --reporter=text --reporter=html npm test",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
     "lint": "eslint src test",
     "test": "ava",
     "test:watch": "chokidar 'test/*.js' 'src/**' -c 'npm test' --silent --initial",
