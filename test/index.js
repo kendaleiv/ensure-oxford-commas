@@ -22,11 +22,11 @@ const noOxfordCommaParagraph = `${noCommaSentence} ${noOxfordCommaSimpleSentence
 //
 
 test('ensureOxfordCommas does not throw when no Oxford comma needed', t => {
-  t.doesNotThrow(() => ensureOxfordCommas(singleCommaSentence));
+  t.notThrows(() => ensureOxfordCommas(singleCommaSentence));
 });
 
 test('ensureOxfordCommas does not throw when not missing Oxford comma', t => {
-  t.doesNotThrow(() => ensureOxfordCommas(oxfordCommaSimpleSentenceAnd));
+  t.notThrows(() => ensureOxfordCommas(oxfordCommaSimpleSentenceAnd));
 });
 
 test('ensureOxfordCommas throws when missing single Oxford comma', t => {
