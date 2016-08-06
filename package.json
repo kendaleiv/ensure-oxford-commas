@@ -44,7 +44,7 @@
     "babel-preset-es2015": "^6.3.13",
     "chokidar-cli": "^1.2.0",
     "coveralls": "^2.11.6",
-    "eslint": "^1.10.3",
+    "eslint": "^3.2.2",
     "nsp": "^2.2.0",
     "nyc": "^7.1.0"
   }
