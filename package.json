@@ -33,7 +33,7 @@
   "author": {
     "name": "Ken Dale",
     "email": "ken@kendaleiv.com",
-    "url": "http://kendaleiv.com"
+    "url": "https://kendaleiv.com"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",
