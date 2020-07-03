@@ -1,5 +1,7 @@
 # Custom
 test/.temp
+lib/
+package-lock.json
 
 # Logs
 logs
