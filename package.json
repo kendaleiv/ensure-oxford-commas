@@ -19,16 +19,14 @@
     "url": "https://github.com/kendaleiv/ensure-oxford-commas"
   },
   "scripts": {
-    "audit": "nsp check package",
     "build": "babel -d ./ ./src",
-    "check": "npm run audit && npm outdated --depth 0",
     "coverage": "jest --coverage",
     "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
     "lint": "eslint src test",
     "test": "jest",
     "test:watch": "jest --watch",
     "validate": "npm run lint && npm test",
-    "prepare": "npm run build && npm run validate && npm run check"
+    "prepare": "npm run build && npm run validate"
   },
   "author": {
     "name": "Ken Dale",
@@ -44,7 +42,6 @@
     "babel-preset-es2015": "^6.3.13",
     "coveralls": "^2.11.6",
     "eslint": "^7.3.1",
-    "jest": "^19.0.0",
-    "nsp": "^2.2.0"
+    "jest": "^19.0.0"
   }
 }
